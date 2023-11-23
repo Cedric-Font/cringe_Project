@@ -1,61 +1,67 @@
 .mainBackground {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headerBackground {
-    background-image: url('src/assets/background_display_copy.jpg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    color: white;
-    font-size: 1.5rem;
-    width: 96vw;
-    height: 70vh;
-    border-radius: 15px;
-    margin-top: 2vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.5rem;
+  width: 96vw;
+  height: 70vh;
+  border-radius: 15px;
+  margin-top: 2vh;
+}
+
+.normal {
+  background-image: url("src/assets/background_display_copy.jpg");
+}
+
+.noel {
+  background-image: url(./assets/back_noel_blague.jpg);
 }
 
 .jokeBackground {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 40vh;
-    border-radius: 15px;
-    background-color: rgba(78, 27, 118, 0.5);
-    color: white;
-    word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vh;
+  border-radius: 15px;
+  background-color: rgba(78, 27, 118, 0.5);
+  color: white;
+  word-wrap: break-word;
 }
-.joke{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
+.joke {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
-.buttonContainer
-button {
-    width: 16vw;
-    height: 8vh;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    color: #4e1b76;
-    border: 1px solid #4e1b76;
-    font-family: "Lemon";
+.buttonContainer button {
+  width: 16vw;
+  height: 8vh;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: #4e1b76;
+  border: 1px solid #4e1b76;
+  font-family: "Lemon";
 }
 
 .buttonContainer {
-    display: flex;
-    justify-content: space-around;
-    margin: 5vh;
-    width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+  width: 100vw;
 }

@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: #4e1b76;
   position: relative;
 }
 
@@ -15,7 +16,6 @@ body {
 }
 
 .normal {
-  background-color: #4e1b76;
   background-image: url(./assets/back_presentation.jpg);
 }
 
@@ -56,14 +56,6 @@ body {
 .presentation .contenerButt .noelModeButton img {
   height: 10vh;
   width: 10vh;
-}
-
-.normal {
-  background-image: url(./assets/back_presentation.jpg);
-}
-
-.noel {
-  background-image: url(./assets/back_noel_home.jpg);
 }
 
 .contenu {
