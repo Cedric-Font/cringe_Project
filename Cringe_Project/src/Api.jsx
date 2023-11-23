@@ -17,6 +17,18 @@ export default function Api({ setJoke, setAnswer, categories }){
     blagues.categories.BLONDES
   ]
 });
+setJoke(blague.joke)
+setAnswer(blague.answer)
+console.log(blague.type)
+console.log("coucou")
+} else if(categories === "EN FAMILLE"){
+    const blague = await blagues.random({
+disallow: [
+blagues.categories.LIMIT,
+blagues.categories.BLONDES,
+blagues.categories.DEV
+]
+});
  setJoke(blague.joke)
         setAnswer(blague.answer)
         console.log(blague.type)
