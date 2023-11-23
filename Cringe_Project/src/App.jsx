@@ -6,7 +6,6 @@ import Home from "./Home";
 
 function App() {
   
-  const [test, setTest] = useState(true)
   const [categories, setCategories] = useState("Home")
 
   
