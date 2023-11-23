@@ -18,7 +18,6 @@ body {
 .presentation {
   height: 60vh;
   width: 96vw;
-  background-image: url(./assets/back_presentation.jpg);
   color: white;
   display: flex;
   flex-direction: column;
@@ -51,6 +50,14 @@ body {
   }
 }
 
+.normal {
+  background-image: url(./assets/back_presentation.jpg);
+}
+
+.noel {
+  background-image: url(./assets/back_noel_home.jpg);
+}
+
 .contenu {
   z-index: 1;
   width: 60vw;
@@ -74,47 +81,47 @@ body {
     background-image: url("src/assets/En_famille.jpg");
     background-size: cover;
   }
-  .enFamille:hover{
-    filter:brightness(1.5)
+  .enFamille:hover {
+    filter: brightness(1.5);
   }
 
   .entreAmis {
     background-image: url("src/assets/Entre_amis.jpg");
     background-size: cover;
   }
-  .entreAmis:hover{
-    filter:brightness(1.5)
+  .entreAmis:hover {
+    filter: brightness(1.5);
   }
 
   .enAmoureux {
     background-image: url("src/assets/En_amoureux.jpg");
     background-size: cover;
   }
-  .enAmoureux:hover{
-    filter:brightness(1.5)
+  .enAmoureux:hover {
+    filter: brightness(1.5);
   }
 
   .entreCollegues {
     background-image: url("src/assets/Entre_collegues.jpg");
     background-size: cover;
   }
-  .entreCollegues:hover{
-    filter:brightness(1.5)
+  .entreCollegues:hover {
+    filter: brightness(1.5);
   }
 
   .enPublic {
     background-image: url("src/assets/En_prive.jpg");
     background-size: cover;
   }
-.enPublic:hover{
-    filter:brightness(1.5)
-}
+  .enPublic:hover {
+    filter: brightness(1.5);
+  }
 
   .enPrive {
     background-image: url("src/assets/En_public.jpg");
     background-size: cover;
   }
-  .enPrive:hover{
-    filter:brightness(1.5)
+  .enPrive:hover {
+    filter: brightness(1.5);
   }
 }

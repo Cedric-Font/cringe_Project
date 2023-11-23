@@ -5,10 +5,10 @@ import pereNoel from "./assets/pere-noel.png"
 export default function Home({ setCategories }){
 
   const [on, setOn] = useState(false);
-  const [noel, setNoel] = useState("")
+  const [noel, setNoel] = useState("normal")
   
   function beNoelOrNot() {
-    if (noel === "noel"){
+    if (on === false){
       setNoel("normal")
     } else {
       setNoel("noel")
@@ -17,6 +17,7 @@ export default function Home({ setCategories }){
   
    useEffect(() => {
   beNoelOrNot()
+  console.log(noel)
   
    }, [on])  
   
@@ -24,7 +25,7 @@ export default function Home({ setCategories }){
           <>
           <div className={`presentation ${noel}`} >
         <div className="contenerButt">
-        <button className="noelModeButton" /* onClick={() => setOn(!on)} */><img src={pereNoel} ></img></button>
+        <button className="noelModeButton"  onClick={() => setOn(!on)} ><img src={pereNoel} ></img></button>
         </div>
         <h1>Cringe Me</h1>
         <p>Comment être malaisant dans toutes les situations</p>
