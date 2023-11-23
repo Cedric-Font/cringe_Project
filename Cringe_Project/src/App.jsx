@@ -20,6 +20,7 @@ function App() {
       <p>Comment être malaisant dans toutes les situations</p>
     </div>
 <div className='contenu'>
+  <button>EN FAMILLE</button>
    <Link to ="display" ><button>ENTRE AMIS </button></Link>
    
    <button onClick={()=> setTest(!joke)} >EN AMOUREUX</button>
@@ -28,7 +29,6 @@ function App() {
    <button>EN PRIVEE</button>
    </div>
 
-   <div>{joke}</div>
 
 
     </>
