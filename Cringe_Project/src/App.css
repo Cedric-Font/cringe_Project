@@ -63,27 +63,34 @@ button {
   font-size: larger;
   color: white;
 }
-button .enFamille {
+
+
+.enFamille {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
 }
-button .entreAmis {
+
+.entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
   background-size: cover;
 }
-button .enAmoureux {
+
+.enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
   background-size: cover;
 }
-button .entreCollegues {
+
+.entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
   background-size: cover;
 }
-button .enPublic {
+
+.enPublic {
   background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
-button .enPrive {
+
+.enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
 }

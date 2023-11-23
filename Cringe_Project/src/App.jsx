@@ -1,12 +1,13 @@
 import "./App.css";
+
 import { useState, useEffect } from 'react';
+
 import Display from "./display";
 import Home from "./Home";
 
-
 function App() {
+
   
-  const [categories, setCategories] = useState("Home")
 
   const [on, setOn] = useState(false);
   const [noel, setNoel] = useState("normal");
@@ -27,16 +28,70 @@ function App() {
    }, [on])  
   
   
+
+  const [test, setTest] = useState(true);
+  const [categories, setCategories] = useState("Home");
+  const [nextJoke, setNextJoke] = useState(false);
+
  console.log(categories)
+
   return (
     <>
-   {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} />:null}
-   {categories === "ENTRE AMIS" ? <Display categories={categories} noel={noel} />: null}
-   {categories === "ENTRE COLLEGUES" ? <Display categories={categories} noel={noel} />: null}
-   {categories === "EN PUBLIC" ? <Display categories={categories} noel={noel}/>: null}
-   {categories === "EN PRIVEE" ? <Display categories={categories} noel={noel}/>: null}
-   {categories === "EN FAMILLE" ? <Display categories={categories} noel={noel}/>: null}
-   {categories === "EN AMOUREUX" ? <Display categories={categories} noel={noel}/>: null}
+
+      {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} /> : null}
+      {categories === "ENTRE AMIS" ? (
+        <Display
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "ENTRE COLLEGUES" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN PUBLIC" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN PRIVEE" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN FAMILLE" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN AMOUREUX" ? (
+        <Display noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+
     </>
   );
 }
