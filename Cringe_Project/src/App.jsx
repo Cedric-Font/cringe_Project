@@ -1,5 +1,4 @@
-import './App.css'
-
+import "./App.css";
 import { useState} from 'react';
 import { Link } from "react-router-dom";
 import Api from './Api';
@@ -20,7 +19,6 @@ function App() {
   }
   console.log(test)
 
-
   return (
     <>
   <Api joke={joke} setJoke={setJoke} test={test} categories1={categories1} categories2={categories2} categories3={categories3} />
@@ -35,14 +33,11 @@ function App() {
    <Link to ="display" ><button>EN PUBLIC</button></Link>
    <Link to ="display" ><button>EN PRIVEE</button></Link>
    </div>
-
+   </div>
    <div>{joke}</div>
 
-
     </>
-  )
+  );
 }
 
-export default App
-
-
+export default App;
