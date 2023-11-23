@@ -59,25 +59,41 @@ body {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
 }
+.contenu .enFamille:hover {
+  filter: brightness(1.5);
+}
 .contenu .entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
   background-size: cover;
+}
+.contenu .entreAmis:hover {
+  filter: brightness(1.5);
 }
 .contenu .enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
   background-size: cover;
 }
+.contenu .enAmoureux:hover {
+  filter: brightness(1.5);
+}
 .contenu .entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
   background-size: cover;
+}
+.contenu .entreCollegues:hover {
+  filter: brightness(1.5);
 }
 .contenu .enPublic {
   background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
+.contenu .enPublic:hover {
+  filter: brightness(1.5);
+}
 .contenu .enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
 }
-
-/*# sourceMappingURL=Home.css.map */
+.contenu .enPrive:hover {
+  filter: brightness(1.5);
+}/*# sourceMappingURL=Home.css.map */
