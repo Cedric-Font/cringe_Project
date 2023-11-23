@@ -1,10 +1,39 @@
+body {
+  margin: 0px;
+  background-color: #4e1b76;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .presentation {
-  height: 45%;
-  width: 90%;
+  height: 45vh;
+  width: 90vw;
   background-image: url(./assets/back_presentation.jpg);
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.contenu {
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contenu button {
+  height: 15vh;
+  width: 20vh;
+  border-radius: 7px;
+  margin: 5%;
 }
 
 /*# sourceMappingURL=App.css.map */
-
