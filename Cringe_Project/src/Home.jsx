@@ -4,23 +4,25 @@ import pereNoel from "./assets/pere-noel.png"
 
 export default function Home({ setCategories }){
 
-
-//const [on, setOn] = useState(false);
-//const [noel, setNoel] = useState("")
-
-/*  useEffect(() => {
-console.log('coucou')
- }, [on])
-
-if (on === false) {
-  setNoel("")
-} else {
-  setNoel("noel")
-} */
-
-    return(
-        <>
-        <div className={`presentation`} >
+  const [on, setOn] = useState(false);
+  const [noel, setNoel] = useState("")
+  
+  function beNoelOrNot() {
+    if (noel === "noel"){
+      setNoel("normal")
+    } else {
+      setNoel("noel")
+    }
+  }
+  
+   useEffect(() => {
+  beNoelOrNot()
+  
+   }, [on])  
+  
+      return(
+          <>
+          <div className={`presentation ${noel}`} >
         <div className="contenerButt">
         <button className="noelModeButton" /* onClick={() => setOn(!on)} */><img src={pereNoel} ></img></button>
         </div>
