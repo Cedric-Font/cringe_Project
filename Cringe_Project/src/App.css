@@ -10,7 +10,7 @@ body {
 }
 
 .presentation {
-  height: 45vh;
+  height: 55vh;
   width: 90vw;
   background-image: url(./assets/back_presentation.jpg);
   color: white;
