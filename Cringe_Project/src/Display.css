@@ -7,7 +7,6 @@
 }
 
 .headerBackground {
-  background-image: url("src/assets/background_display_copy.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -21,6 +20,14 @@
   height: 70vh;
   border-radius: 15px;
   margin-top: 2vh;
+}
+
+.normal {
+  background-image: url(./assets/background_display_copy.jpg);
+}
+
+.noel {
+  background-image: url(./assets/back_noel_blague.jpg);
 }
 
 .jokeBackground {
@@ -58,4 +65,6 @@
   justify-content: space-around;
   margin: 5vh;
   width: 100vw;
-}/*# sourceMappingURL=Display.css.map */
+}
+
+/*# sourceMappingURL=Display.css.map */

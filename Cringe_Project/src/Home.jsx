@@ -1,27 +1,8 @@
 import "./Home.css";
-import {useEffect, useState} from 'react'
 import pereNoel from "./assets/pere-noel.png"
 
-export default function Home({ setCategories }){
+export default function Home({ setCategories, noel, setOn, on }){
 
-  const [on, setOn] = useState(false);
-  const [noel, setNoel] = useState("normal")
-  
-  function beNoelOrNot() {
-    if (on === false){
-      setNoel("normal")
-    } else {
-      setNoel("noel")
-    }
-  }
-  
-   useEffect(() => {
-  beNoelOrNot()
-  console.log('coucou')
-  console.log(noel)
-  
-   }, [on])  
-  
       return(
           <>
           <div className={`presentation ${noel}`} >

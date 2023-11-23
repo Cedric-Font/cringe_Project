@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 body {
   margin: 0px;
   background-color: #4e1b76;
   font-family: "Lemon";
   position: relative;
+=======
+$normalImage: url(./assets/back_presentation.jpg);
+$noelImage: url(./assets/back_noel_home.jpg);
+$couleurFond: #4e1b76;
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+>>>>>>> 11b6a5b56f8359d4fed29f03d5a73e343459cc71
 }
 
 #root {
@@ -17,12 +26,18 @@ body {
 }
 
 .normal {
-  background-color: #4e1b76;
-  background-image: url(./assets/back_presentation.jpg);
+  background-image: $normalImage;
 }
 
 .noel {
-  background-image: url(./assets/back_noel_home.jpg);
+  background-image: $noelImage;
+}
+
+body {
+  margin: 0px;
+  background-color: $couleurFond;
+  position: relative;
+  font-family: "Lemon";
 }
 
 .presentation {
@@ -58,14 +73,6 @@ body {
       }
     }
   }
-}
-
-.normal {
-  background-image: url(./assets/back_presentation.jpg);
-}
-
-.noel {
-  background-image: url(./assets/back_noel_home.jpg);
 }
 
 .contenu {

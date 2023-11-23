@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 body {
   margin: 0px;
   background-color: #4e1b76;
   font-family: "Lemon";
   position: relative;
+=======
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+>>>>>>> 11b6a5b56f8359d4fed29f03d5a73e343459cc71
 }
-
 #root {
   display: flex;
   flex-direction: column;
@@ -17,12 +22,18 @@ body {
 }
 
 .normal {
-  background-color: #4e1b76;
   background-image: url(./assets/back_presentation.jpg);
 }
 
 .noel {
   background-image: url(./assets/back_noel_home.jpg);
+}
+
+body {
+  margin: 0px;
+  background-color: #4e1b76;
+  position: relative;
+  font-family: "Lemon";
 }
 
 .presentation {
@@ -58,14 +69,6 @@ body {
 .presentation .contenerButt .noelModeButton img {
   height: 10vh;
   width: 10vh;
-}
-
-.normal {
-  background-image: url(./assets/back_presentation.jpg);
-}
-
-.noel {
-  background-image: url(./assets/back_noel_home.jpg);
 }
 
 .contenu {
