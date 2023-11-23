@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
 body {
   margin: 0px;
   background-color: #4e1b76;
+  font-family: "Lemon";
   position: relative;
+
 }
 
 #root {

@@ -12,7 +12,6 @@ function App() {
  console.log(categories)
   return (
     <>
-
    {categories === "Home" ? <Home setCategories={setCategories} />:null}
    {categories === "ENTRE AMIS" ? <Display categories={categories} />: null}
    {categories === "ENTRE COLLEGUES" ? <Display categories={categories} />: null}
