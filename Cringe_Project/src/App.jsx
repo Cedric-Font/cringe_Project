@@ -27,14 +27,13 @@ function App() {
       <p>Comment être malaisant dans toutes les situations</p>
     </div>
 <div className='contenu'>
-   <Link to ="display" ><button onClick={()=> entreAmis()} >ENTRE AMIS </button></Link>
-   <Link to ="display" ><button>EN AMOUREUX </button></Link>
-   <Link to ="display" ><button>ENTRE COLLEGUES</button></Link>
-   <Link to ="display" ><button>EN PUBLIC</button></Link>
-   <Link to ="display" ><button>EN PRIVEE</button></Link>
+    <Link to ="display" ><button className="enFamille" > EN FAMILLE</button></Link>
+   <Link   to ="display" ><button className="entreAmis" onClick={()=> entreAmis()} >ENTRE AMIS </button></Link>
+   <Link   to ="display" ><button className="enAmoureux">EN AMOUREUX </button></Link>
+   <Link   to ="display" ><button className="entreCollegues">ENTRE COLLEGUES</button></Link>
+   <Link  to ="display" ><button className="enPublic">EN PUBLIC</button></Link>
+   <Link  to ="display" ><button className="enPrive" >EN PRIVEE</button></Link>
    </div>
-   </div>
-   <div>{joke}</div>
 
     </>
   );
