@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   background-color: #4e1b76;
+  position: relative;
 }
 
 #root {
@@ -9,8 +10,13 @@ body {
   align-items: center;
 }
 
+.presentation,
+.contenu {
+  position: fixed;
+}
+
 .presentation {
-  height: 55vh;
+  height: 65vh;
   width: 90vw;
   background-image: url(./assets/back_presentation.jpg);
   color: white;
@@ -20,52 +26,61 @@ body {
   justify-content: center;
   background-size: cover;
   border-radius: 15px;
+  top: 0;
+}
+.presentation p {
+  font-size: larger;
+}
+.presentation h1 {
+  font-size: 65pt;
 }
 
-
-.enFamille {
+.contenu {
+  z-index: 1;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+.contenu a {
+  height: 15vh;
+  width: 20vh;
+  margin: 5%;
+}
+.contenu a button {
+  border-radius: 7px;
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+.contenu a .enFamille {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
 }
-
-.entreAmis {
+.contenu a .entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
   background-size: cover;
 }
-
-.enAmoureux {
+.contenu a .enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
   background-size: cover;
 }
-
-.entreCollegues {
+.contenu a .entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
   background-size: cover;
 }
-
-.enPrive {
+.contenu a .enPublic {
   background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
-
-.enPublic {
+.contenu a .enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
 }
 
-.contenu {
-  height: 55vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.contenu button {
-  height: 15vh;
-  width: 20vh;
-  border-radius: 7px;
-  margin: 5%;
-}
-
 /*# sourceMappingURL=App.css.map */
-
