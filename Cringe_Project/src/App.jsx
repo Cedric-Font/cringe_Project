@@ -1,40 +1,24 @@
 import "./App.css";
 import { useState} from 'react';
-import { Link } from "react-router-dom";
-import Api from './Api';
+import Display from "./display";
+import Home from "./Home";
 
 
 function App() {
   
-  const [joke , setJoke] = useState([])
   const [test, setTest] = useState(true)
-  const [categories1, setCategories1] = useState("")
-  const [categories2, setCategories2] = useState("")
-  const [categories3, setCategories3] = useState("")
+  const [categories, setCategories] = useState("Home")
 
-  function entreAmis(){
-    setCategories1("dev")
-    setCategories2("LIMIT")
-    setCategories3("BLONDES")
-  }
-  console.log(test)
-
+  
+ console.log(categories)
   return (
     <>
-  <Api joke={joke} setJoke={setJoke} test={test} categories1={categories1} categories2={categories2} categories3={categories3} />
-    <div className='presentation'>
-      <h1>Cringe Me</h1>
-      <p>Comment être malaisant dans toutes les situations</p>
-    </div>
-<div className='contenu'>
-   <Link to ="display" ><button onClick={()=> entreAmis()} >ENTRE AMIS </button></Link>
-   <Link to ="display" ><button>EN AMOUREUX </button></Link>
-   <Link to ="display" ><button>ENTRE COLLEGUES</button></Link>
-   <Link to ="display" ><button>EN PUBLIC</button></Link>
-   <Link to ="display" ><button>EN PRIVEE</button></Link>
-   </div>
-   </div>
-   <div>{joke}</div>
+   {categories === "Home" ? <Home setCategories={setCategories} />:null}
+   {categories === "ENTRE AMIS" ? <Display categories={categories} />: null}
+   {categories === "ENTRE COLLEGUES" ? <Display categories={categories} />: null}
+   {categories === "EN PUBLIC" ? <Display categories={categories} />: null}
+   {categories === "EN PRIVEE" ? <Display categories={categories} />: null}
+   
 
     </>
   );
