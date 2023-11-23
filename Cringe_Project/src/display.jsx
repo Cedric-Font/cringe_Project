@@ -2,18 +2,18 @@ import Api from "./Api";
 import { useState } from "react";
 import "./Display.css";
 
-export default function Display() {
-  const [joke, setJoke] = useState([]);
-  const [answer, setAnswer] = useState("");
-  console.log(joke);
+export default function Display({ categories }){
 
-  return (
-    <div className="mainBackground">
-      <section className="headerBackground">
-        <Api joke={joke} setJoke={setJoke} setAnswer={setAnswer} />
-        <div className="jokeBackground">
-          <div className="joke">{joke}</div>
-          <div className="answer">{answer}</div>
+const [joke , setJoke] = useState([])
+const[answer, setAnswer] = useState("")
+console.log(categories)
+
+
+    return(
+        <div>
+        <Api jokes={joke} setJoke={setJoke} setAnswer={setAnswer} categories={categories} />
+        <div>{joke}</div>
+        <div>{answer}</div>
         </div>
       </section>
       <section className="buttonContainer">

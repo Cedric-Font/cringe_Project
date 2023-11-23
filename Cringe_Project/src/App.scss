@@ -9,6 +9,7 @@ body {
   margin: 0px;
   background-color: #4e1b76;
   font-family: "Lemon";
+  position: relative;
 }
 
 #root {
@@ -16,9 +17,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.presentation,
+.contenu {
+  position: fixed;
+}
+
 .presentation {
-  //border: 5px solid green;
-  height: 45vh;
+  height: 65vh;
   width: 90vw;
   background-image: url(./assets/back_presentation.jpg);
   color: white;
@@ -28,50 +34,68 @@ body {
   justify-content: center;
   background-size: cover;
   border-radius: 15px;
-}
-
-.contenu {
-  //border: 5px solid red;
-  height: 55vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  button {
-    height: 15vh;
-    width: 20vh;
-    border-radius: 7px;
-    margin: 5%;
-    font-family: "Lemon";
+  top: 0;
+  p {
+    font-size: larger;
+  }
+  h1 {
+    font-size: 65pt;
   }
 }
 
-.enFamille {
-  background-image: url('src/assets/En_famille.jpg');
-  background-size: cover;
+.contenu {
+  z-index: 1;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  bottom: 0;
+  a {
+    height: 15vh;
+    width: 20vh;
+    margin: 5%;
+  }
 }
 
-.entreAmis {
-  background-image: url('src/assets/Entre_amis.jpg');
-  background-size: cover;
-}
+    button {
+      border-radius: 7px;
+      padding: 5%;
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      font-weight: bolder;
+      font-size: larger;
+      color: white;
+    }
 
-.enAmoureux {
-  background-image: url('src/assets/En_amoureux.jpg');
-  background-size: cover;
-}
+    .enFamille {
+      background-image: url("src/assets/En_famille.jpg");
+      background-size: cover;
+    }
 
-.entreCollegues {
-  background-image: url('src/assets/Entre_collegues.jpg');
-  background-size: cover;
-}
+    .entreAmis {
+      background-image: url("src/assets/Entre_amis.jpg");
+      background-size: cover;
+    }
 
-.enPrive {
-  background-image: url('src/assets/En_prive.jpg');
-  background-size: cover;
-}
+    .enAmoureux {
+      background-image: url("src/assets/En_amoureux.jpg");
+      background-size: cover;
+    }
 
-.enPublic {
-  background-image: url('src/assets/En_public.jpg');
-  background-size: cover;
+    .entreCollegues {
+      background-image: url("src/assets/Entre_collegues.jpg");
+      background-size: cover;
+    }
+
+    .enPublic {
+      background-image: url("src/assets/En_prive.jpg");
+      background-size: cover;
+    }
+
+    .enPrive {
+      background-image: url("src/assets/En_public.jpg");
+      background-size: cover;
+    }
+  }
 }

@@ -1,13 +1,7 @@
-@font-face {
-  font-family: "Lemon";
-  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
-}
 body {
   margin: 0px;
   background-color: #4e1b76;
-  font-family: "Lemon";
   position: relative;
-
 }
 
 #root {
@@ -49,42 +43,37 @@ body {
   justify-content: space-evenly;
   bottom: 0;
 }
-.contenu a {
+.contenu button {
+  border-radius: 7px;
+  margin: 5%;
   height: 15vh;
   width: 20vh;
-  margin: 5%;
-}
-.contenu a button {
-  border-radius: 7px;
-  padding: 5%;
-  height: 100%;
-  width: 100%;
   background-position: center;
   font-weight: bolder;
   font-size: larger;
   color: white;
 }
-.contenu a .enFamille {
+.contenu .enFamille {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
 }
-.contenu a .entreAmis {
+.contenu .entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
   background-size: cover;
 }
-.contenu a .enAmoureux {
+.contenu .enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
   background-size: cover;
 }
-.contenu a .entreCollegues {
+.contenu .entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
   background-size: cover;
 }
-.contenu a .enPublic {
+.contenu .enPublic {
   background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
-.contenu a .enPrive {
+.contenu .enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
-}/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=Home.css.map */
