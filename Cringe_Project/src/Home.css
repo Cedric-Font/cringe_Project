@@ -35,6 +35,21 @@ body {
 .presentation h1 {
   font-size: 65pt;
 }
+.presentation .contenerButt {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.presentation .contenerButt .noelModeButton {
+  height: 10vh;
+  width: 10vh;
+  background: none;
+  border: none;
+}
+.presentation .contenerButt .noelModeButton img {
+  height: 10vh;
+  width: 10vh;
+}
 
 .contenu {
   z-index: 1;

@@ -34,6 +34,21 @@ body {
   h1 {
     font-size: 65pt;
   }
+  .contenerButt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .noelModeButton {
+      height: 10vh;
+      width: 10vh;
+      background: none;
+      border: none;
+      img {
+        height: 10vh;
+        width: 10vh;
+      }
+    }
+  }
 }
 
 .contenu {
