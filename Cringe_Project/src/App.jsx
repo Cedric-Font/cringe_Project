@@ -7,7 +7,8 @@ function App() {
   const [test, setTest] = useState(true);
   const [categories, setCategories] = useState("Home");
   const [nextJoke, setNextJoke] = useState(false);
-  console.log(categories);
+ console.log(categories)
+
   return (
     <>
       {categories === "Home" ? <Home setCategories={setCategories} /> : null}
