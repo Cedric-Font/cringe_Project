@@ -2,7 +2,12 @@ import Api from "./Api";
 import { useState } from "react";
 import "./Display.css";
 
-export default function Display({ categories }) {
+export default function Display({
+  categories,
+  setCategories,
+  nextJoke,
+  setNextJoke,
+}) {
   const [joke, setJoke] = useState([]);
   const [answer, setAnswer] = useState("");
   console.log(categories);
@@ -15,6 +20,7 @@ export default function Display({ categories }) {
           setJoke={setJoke}
           setAnswer={setAnswer}
           categories={categories}
+          nextJoke={nextJoke}
         />
         <div className="jokeBackground">
           <div>{joke}</div>
@@ -23,8 +29,8 @@ export default function Display({ categories }) {
       </div>
 
       <section className="buttonContainer">
-        <button>Retour</button>
-        <button>Suivant</button>
+        <button onClick={() => setCategories("Home")}>Retour</button>
+        <button onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
       </section>
     </div>
   );
