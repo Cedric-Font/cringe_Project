@@ -7,7 +7,6 @@ body {
   background-color: #4e1b76;
   font-family: "Lemon";
   position: relative;
-
 }
 
 #root {
@@ -54,7 +53,8 @@ body {
   width: 20vh;
   margin: 5%;
 }
-.contenu a button {
+
+button {
   border-radius: 7px;
   padding: 5%;
   height: 100%;
@@ -64,27 +64,33 @@ body {
   font-size: larger;
   color: white;
 }
-.contenu a .enFamille {
+
+.enFamille {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
 }
-.contenu a .entreAmis {
+
+.entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
   background-size: cover;
 }
-.contenu a .enAmoureux {
+
+.enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
   background-size: cover;
 }
-.contenu a .entreCollegues {
+
+.entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
   background-size: cover;
 }
-.contenu a .enPublic {
+
+.enPublic {
   background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
-.contenu a .enPrive {
+
+.enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
 }/*# sourceMappingURL=App.css.map */
