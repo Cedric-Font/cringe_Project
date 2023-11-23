@@ -19,6 +19,8 @@ function App() {
    {categories === "ENTRE COLLEGUES" ? <Display categories={categories} />: null}
    {categories === "EN PUBLIC" ? <Display categories={categories} />: null}
    {categories === "EN PRIVEE" ? <Display categories={categories} />: null}
+   {categories === "EN FAMILLE" ? <Display categories={categories} />: null}
+   {categories === "EN AMOUREUX" ? <Display categories={categories} />: null}
     </>
   );
 }
