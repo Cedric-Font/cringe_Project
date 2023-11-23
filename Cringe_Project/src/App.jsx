@@ -7,13 +7,10 @@ import Home from "./Home";
 function App() {
   
   const [test, setTest] = useState(true)
-  const [categories, setCategories] = useState("Home")
-
-  
+  const [categories, setCategories] = useState("Home")  
  console.log(categories)
   return (
     <>
-
    {categories === "Home" ? <Home setCategories={setCategories} />:null}
    {categories === "ENTRE AMIS" ? <Display categories={categories} />: null}
    {categories === "ENTRE COLLEGUES" ? <Display categories={categories} />: null}

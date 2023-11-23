@@ -1,5 +1,6 @@
-import Api from "./Api"
-import { useState } from "react"
+import Api from "./Api";
+import { useState } from "react";
+import "./Display.css";
 
 export default function Display({ categories }){
 
@@ -14,5 +15,11 @@ console.log(categories)
         <div>{joke}</div>
         <div>{answer}</div>
         </div>
-    )
+      </section>
+      <section className="buttonContainer">
+        <button>Retour</button>
+        <button>Suivant</button>
+      </section>
+    </div>
+  );
 }
