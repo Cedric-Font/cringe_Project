@@ -22,6 +22,37 @@ body {
   border-radius: 15px;
 }
 
+
+.enFamille {
+  background-image: url("src/assets/En_famille.jpg");
+  background-size: cover;
+}
+
+.entreAmis {
+  background-image: url("src/assets/Entre_amis.jpg");
+  background-size: cover;
+}
+
+.enAmoureux {
+  background-image: url("src/assets/En_amoureux.jpg");
+  background-size: cover;
+}
+
+.entreCollegues {
+  background-image: url("src/assets/Entre_collegues.jpg");
+  background-size: cover;
+}
+
+.enPrive {
+  background-image: url("src/assets/En_prive.jpg");
+  background-size: cover;
+}
+
+.enPublic {
+  background-image: url("src/assets/En_public.jpg");
+  background-size: cover;
+}
+
 .contenu {
   height: 55vh;
   width: 100vw;
@@ -37,3 +68,4 @@ body {
 }
 
 /*# sourceMappingURL=App.css.map */
+
