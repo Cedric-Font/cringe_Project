@@ -6,7 +6,7 @@ export default function Display({
   categories,
   setCategories,
   nextJoke,
-  setNextJoke, , noel 
+  setNextJoke, noel 
 }) {
 
   const [joke, setJoke] = useState([]);

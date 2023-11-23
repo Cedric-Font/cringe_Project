@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
 #root {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,7 @@ body {
   margin: 0px;
   background-color: #4e1b76;
   position: relative;
+  font-family: "Lemon";
 }
 
 .presentation {
@@ -66,7 +71,7 @@ body {
   justify-content: space-evenly;
   bottom: 0;
 }
-.contenu button {
+.contenu .jokeButt {
   border: none;
   border-radius: 7px;
   margin: 2%;

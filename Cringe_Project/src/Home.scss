@@ -1,6 +1,10 @@
 $normalImage: url(./assets/back_presentation.jpg);
 $noelImage: url(./assets/back_noel_home.jpg);
 $couleurFond: #4e1b76;
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
 
 #root {
   display: flex;
@@ -15,18 +19,17 @@ $couleurFond: #4e1b76;
 
 .normal {
   background-image: $normalImage;
-  $couleurFond: #4e1b76;
 }
 
 .noel {
   background-image: $noelImage;
-  $couleurFond: #008354;
 }
 
 body {
   margin: 0px;
   background-color: $couleurFond;
   position: relative;
+  font-family: "Lemon";
 }
 
 .presentation {
@@ -71,7 +74,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   bottom: 0;
-  button {
+  .jokeButt {
     border: none;
     border-radius: 7px;
     margin: 2%;

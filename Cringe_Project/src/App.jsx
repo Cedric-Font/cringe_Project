@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { useState, useEffect } from 'react';
 
 import Display from "./display";
