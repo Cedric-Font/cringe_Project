@@ -11,7 +11,7 @@ console.log(joke)
         <div>
         <Api joke={joke} setJoke={setJoke} setAnswer={setAnswer}/>
         <div>{joke}</div>
-        <div>{answer}</div>
+        <div>{answer}cc</div>
         </div>
     )
 }
