@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-body {
-  margin: 0px;
-  background-color: #4e1b76;
-  font-family: "Lemon";
-  position: relative;
-=======
 $normalImage: url(./assets/back_presentation.jpg);
 $noelImage: url(./assets/back_noel_home.jpg);
 $couleurFond: #4e1b76;
 @font-face {
   font-family: "Lemon";
   src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
->>>>>>> 11b6a5b56f8359d4fed29f03d5a73e343459cc71
 }
 
 #root {
