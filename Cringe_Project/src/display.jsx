@@ -17,7 +17,7 @@ export default function Display({ categories }) {
           categories={categories}
         />
         <div className="jokeBackground">
-          <div>{joke}</div>
+          <div className="joke" >{joke}</div>
           <div>{answer}</div>
         </div>
       </div>
