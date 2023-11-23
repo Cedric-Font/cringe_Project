@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import BlaguesAPI from 'blagues-api';
+import BlaguesAPI from "blagues-api";
 
 export default function Api({ setJoke, setAnswer, categories }){
-   
   
     useEffect(()=>{
         console.log(categories)
@@ -79,12 +78,10 @@ blagues.categories.DEV
         setAnswer(blague.answer)
         console.log(blague.answer)
         }
-        
-       
-      }
-      funcBlague()
-      console.log(response)
-    },[])
-    
-    return 
+    }
+    funcBlague();
+    console.log(response);
+  }, [nextJoke]);
+
+  return;
 }
