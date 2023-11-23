@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
 body {
   margin: 0px;
   background-color: #4e1b76;
+  font-family: "Lemon";
 }
 
 #root {
@@ -22,6 +27,20 @@ body {
   border-radius: 15px;
 }
 
+.contenu {
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contenu button {
+  height: 15vh;
+  width: 20vh;
+  border-radius: 7px;
+  margin: 5%;
+  font-family: "Lemon";
+}
 
 .enFamille {
   background-image: url("src/assets/En_famille.jpg");
@@ -51,21 +70,4 @@ body {
 .enPublic {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
-}
-
-.contenu {
-  height: 55vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.contenu button {
-  height: 15vh;
-  width: 20vh;
-  border-radius: 7px;
-  margin: 5%;
-}
-
-/*# sourceMappingURL=App.css.map */
-
+}/*# sourceMappingURL=App.css.map */
