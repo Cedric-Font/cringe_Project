@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  background-color: #4e1b76;
+  font-family: "Lemon";
   position: relative;
 }
 
@@ -74,7 +76,7 @@ body {
   justify-content: space-evenly;
   bottom: 0;
 }
-.contenu button {
+.contenu .jokeButt {
   border: none;
   border-radius: 7px;
   margin: 2%;
@@ -126,6 +128,4 @@ body {
 }
 .contenu .enPrive:hover {
   filter: brightness(1.5);
-}
-
-/*# sourceMappingURL=Home.css.map */
+}/*# sourceMappingURL=Home.css.map */

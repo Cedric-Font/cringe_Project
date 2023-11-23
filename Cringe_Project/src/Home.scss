@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-
+  background-color: #4e1b76;
+  font-family: "Lemon";
   position: relative;
 }
 
@@ -74,7 +75,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   bottom: 0;
-  button {
+  .jokeButt {
     border: none;
     border-radius: 7px;
     margin: 2%;
