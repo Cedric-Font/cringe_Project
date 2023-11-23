@@ -6,15 +6,16 @@ export default function Display({
   categories,
   setCategories,
   nextJoke,
-  setNextJoke,
+  setNextJoke, , noel 
 }) {
+
   const [joke, setJoke] = useState([]);
   const [answer, setAnswer] = useState("");
   console.log(categories);
 
   return (
     <div className="mainBackground">
-      <div className="headerBackground">
+      <div className={`headerBackground ${noel}`}>
         <Api
           jokes={joke}
           setJoke={setJoke}

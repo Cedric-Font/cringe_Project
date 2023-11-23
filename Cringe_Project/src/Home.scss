@@ -1,8 +1,6 @@
-body {
-  margin: 0px;
-
-  position: relative;
-}
+$normalImage: url(./assets/back_presentation.jpg);
+$noelImage: url(./assets/back_noel_home.jpg);
+$couleurFond: #4e1b76;
 
 #root {
   display: flex;
@@ -16,12 +14,19 @@ body {
 }
 
 .normal {
-  background-color: #4e1b76;
-  background-image: url(./assets/back_presentation.jpg);
+  background-image: $normalImage;
+  $couleurFond: #4e1b76;
 }
 
 .noel {
-  background-image: url(./assets/back_noel_home.jpg);
+  background-image: $noelImage;
+  $couleurFond: #008354;
+}
+
+body {
+  margin: 0px;
+  background-color: $couleurFond;
+  position: relative;
 }
 
 .presentation {
@@ -57,14 +62,6 @@ body {
       }
     }
   }
-}
-
-.normal {
-  background-image: url(./assets/back_presentation.jpg);
-}
-
-.noel {
-  background-image: url(./assets/back_noel_home.jpg);
 }
 
 .contenu {

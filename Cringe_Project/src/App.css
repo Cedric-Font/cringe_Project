@@ -4,7 +4,6 @@
 }
 body {
   margin: 0px;
-  background-color: #4e1b76;
   font-family: "Lemon";
   position: relative;
 }
@@ -65,6 +64,7 @@ button {
   color: white;
 }
 
+
 .enFamille {
   background-image: url("src/assets/En_famille.jpg");
   background-size: cover;
@@ -93,4 +93,6 @@ button {
 .enPrive {
   background-image: url("src/assets/En_public.jpg");
   background-size: cover;
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */
