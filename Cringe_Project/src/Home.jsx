@@ -17,6 +17,7 @@ export default function Home({ setCategories }){
   
    useEffect(() => {
   beNoelOrNot()
+  console.log('coucou')
   console.log(noel)
   
    }, [on])  
@@ -31,7 +32,7 @@ export default function Home({ setCategories }){
         <p>Comment être malaisant dans toutes les situations</p>
 
       </div>
-  <div className='contenu'>
+  <div className={`contenu`}>
     <button className="enFamille jokeButt" onClick={()=> setCategories("EN FAMILLE")} >EN FAMILLE</button>
      <button className="entreAmis jokeButt" onClick={()=> setCategories("ENTRE AMIS")} >ENTRE AMIS </button>
      <button className="enAmoureux jokeButt" onClick={()=> setCategories("EN AMOUREUX")}>EN AMOUREUX </button>

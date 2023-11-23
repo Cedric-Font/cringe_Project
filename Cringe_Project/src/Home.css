@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  background-color: #4e1b76;
   position: relative;
 }
 
@@ -13,6 +12,15 @@ body {
 .presentation,
 .contenu {
   position: fixed;
+}
+
+.normal {
+  background-color: #4e1b76;
+  background-image: url(./assets/back_presentation.jpg);
+}
+
+.noel {
+  background-image: url(./assets/back_noel_home.jpg);
 }
 
 .presentation {
