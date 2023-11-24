@@ -1,14 +1,18 @@
 import Api from "./Api";
 import { useState } from "react";
 import "./Display.css";
+import painDepice from "./assets/bonhomme-en-pain-depice.png";
+import bouleNeige from "./assets/boule-de-neige.png";
+import tasNeige from "./assets/tas-de-neige.png";
 
 export default function Display({
   categories,
   setCategories,
   nextJoke,
+  noel,
+  gingerbread,
   setNextJoke, cadeau, nouvelAn, colorButt
 }) {
-
   const [joke, setJoke] = useState([]);
   const [answer, setAnswer] = useState("");
   console.log(categories);
@@ -35,6 +39,13 @@ export default function Display({
         <button className={colorButt} onClick={() => setCategories("Home")}>Retour</button>
         <button className={colorButt} onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
       </section>
+      {gingerbread === true && (
+        <div className="bread_container">
+          <img className="snowBowl" src={bouleNeige} alt="boule de neige"></img>
+          <img className="bread" src={painDepice} alt="pain d'epice"></img>
+          <img className="tasDeNeige" src={tasNeige} alt="tas de neige" />
+        </div>
+      )}
     </div>
   );
 }
