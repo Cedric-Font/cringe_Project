@@ -22,11 +22,11 @@
   margin-top: 2vh;
 }
 
-.normal {
+.normal2 {
   background-image: url(./assets/background_display_copy.jpg);
 }
 
-.noel {
+.noel2 {
   background-image: url(./assets/back_noel_blague.jpg);
 }
 
@@ -42,6 +42,14 @@
   background-color: rgba(78, 27, 118, 0.5);
   color: white;
   word-wrap: break-word;
+}
+
+.normal3 {
+  background-color: rgba(78, 27, 118, 0.5);
+}
+
+.noel3 {
+  background-color: rgba(0, 82, 68, 0.5);
 }
 
 .joke {
@@ -65,4 +73,6 @@
   justify-content: space-around;
   margin: 5vh;
   width: 100vw;
-}/*# sourceMappingURL=Display.css.map */
+}
+
+/*# sourceMappingURL=Display.css.map */
