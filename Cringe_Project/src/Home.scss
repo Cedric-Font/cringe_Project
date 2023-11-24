@@ -92,6 +92,8 @@ body {
   }
   .enFamille:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 
   .entreAmis {
@@ -100,6 +102,8 @@ body {
   }
   .entreAmis:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 
   .enAmoureux {
@@ -108,6 +112,8 @@ body {
   }
   .enAmoureux:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 
   .entreCollegues {
@@ -116,6 +122,8 @@ body {
   }
   .entreCollegues:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 
   .enPublic {
@@ -124,6 +132,8 @@ body {
   }
   .enPublic:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 
   .enPrive {
@@ -132,5 +142,7 @@ body {
   }
   .enPrive:hover {
     filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
   }
 }
