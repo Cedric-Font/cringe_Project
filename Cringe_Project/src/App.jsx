@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import "./App.css"
 import Display from "./display";
 import Home from "./Home";
 
@@ -30,13 +30,15 @@ function App() {
   const [test, setTest] = useState(true);
   const [categories, setCategories] = useState("Home");
   const [nextJoke, setNextJoke] = useState(false);
+  const [layer, setLayer] = useState("layerr")
 
+ 
  console.log(categories)
 
   return (
     <>
-
-      {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} /> : null}
+     <div className="wrapper">
+      {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} layer={layer} setLayer={setLayer} /> : null}
       {categories === "ENTRE AMIS" ? (
         <Display
           categories={categories}
@@ -89,6 +91,15 @@ function App() {
           setNextJoke={setNextJoke}
         />
       ) : null}
+
+
+     <div className={`snow ${layer}1 a`}></div>
+     <div className={`snow ${layer}1`}></div> 
+     <div className={`snow ${layer}2 a`}></div>
+     <div className={`snow ${layer}2`}></div>
+     <div className={`snow ${layer}3 a`}></div>
+     <div className={`snow ${layer}3`}></div>
+</div>
 
     </>
   );

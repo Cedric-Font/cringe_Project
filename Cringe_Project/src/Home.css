@@ -11,14 +11,17 @@
 .presentation,
 .contenu {
   position: fixed;
+  margin-left: 18%;
 }
 
 .normal {
   background-image: url(./assets/back_presentation.jpg);
+  margin-left: 2%;
 }
 
 .noel {
   background-image: url(./assets/back_noel_home.jpg);
+  margin-left: 2%;
 }
 
 body {
