@@ -9,12 +9,15 @@ function App() {
 
   const [on, setOn] = useState(false);
   const [noel, setNoel] = useState("normal");
+  const [color, setColor] = useState("normal4"); 
   
   function beNoelOrNot() {
     if (on === false){
       setNoel("normal")
+      setColor("normal4")
     } else {
       setNoel("noel")
+      setColor("noel4")
     }
   }
   
@@ -37,7 +40,7 @@ function App() {
 
   return (
     <>
-     <div className="wrapper">
+     <div className={`wrapper ${color}`}>
       {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} layer={layer} setLayer={setLayer} /> : null}
       {categories === "ENTRE AMIS" ? (
         <Display
