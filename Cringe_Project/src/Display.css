@@ -24,11 +24,11 @@
   margin-top: 2vh;
 }
 
-.normal {
+.normal2 {
   background-image: url(./assets/background_display_copy.jpg);
 }
 
-.noel {
+.noel2 {
   background-image: url(./assets/back_noel_blague.jpg);
 }
 
@@ -46,6 +46,14 @@
   word-wrap: break-word;
 }
 
+.normal3 {
+  background-color: rgba(78, 27, 118, 0.5);
+}
+
+.noel3 {
+  background-color: rgba(0, 82, 68, 0.5);
+}
+
 .joke {
   display: flex;
   justify-content: center;
@@ -57,9 +65,17 @@
   height: 8vh;
   border-radius: 10px;
   font-size: 1.5rem;
+  font-family: "Lemon";
+}
+
+.normal5 {
   color: #4e1b76;
   border: 1px solid #4e1b76;
-  font-family: "Lemon";
+}
+
+.noel5 {
+  color: #005244;
+  border: 1px solid #005244;
 }
 
 .buttonContainer {

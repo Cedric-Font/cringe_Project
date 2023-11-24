@@ -1,14 +1,21 @@
 import "./Home.css";
 import pereNoel from "./assets/pere-noel.png";
 
-export default function Home({ setCategories, noel, setOn, on }) {
-  return (
-    <>
-      <div className={`presentation ${noel}`}>
+export default function Home({ setCategories, noel, setOn, on, setLayer }){
+
+    function activer (){
+        setOn(!on)
+    }
+    if(on === true){
+    setLayer("layer")
+  }else{
+    setLayer("layerr")
+  }
+      return(
+          <>
+          <div className={`presentation ${noel}`} >
         <div className="contenerButt">
-          <button className="noelModeButton" onClick={() => setOn(!on)}>
-            <img src={pereNoel}></img>
-          </button>
+        <button className="noelModeButton"  onClick={() => activer()} ><img src={pereNoel} ></img></button>
         </div>
         <h1>Cringe Me</h1>
         <p>Comment être malaisant dans toutes les situations</p>

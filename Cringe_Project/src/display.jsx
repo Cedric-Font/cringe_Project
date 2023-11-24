@@ -9,17 +9,19 @@ export default function Display({
   categories,
   setCategories,
   nextJoke,
-  setNextJoke,
   noel,
   gingerbread,
+  setNextJoke, cadeau, nouvelAn, colorButt
 }) {
   const [joke, setJoke] = useState([]);
   const [answer, setAnswer] = useState("");
   console.log(categories);
 
+  console.log(cadeau)
+
   return (
     <div className="mainBackground">
-      <div className={`headerBackground ${noel}`}>
+      <div className={`headerBackground ${cadeau}`}>
         <Api
           jokes={joke}
           setJoke={setJoke}
@@ -27,15 +29,15 @@ export default function Display({
           categories={categories}
           nextJoke={nextJoke}
         />
-        <div className="jokeBackground">
-          <div className="joke">{joke}</div>
+        <div className={`jokeBackground ${nouvelAn}`}>
+          <div className="joke" >{joke}</div>
           <div>{answer}</div>
         </div>
       </div>
 
       <section className="buttonContainer">
-        <button onClick={() => setCategories("Home")}>Retour</button>
-        <button onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
+        <button className={colorButt} onClick={() => setCategories("Home")}>Retour</button>
+        <button className={colorButt} onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
       </section>
       {gingerbread === true && (
         <div className="bread_container">
