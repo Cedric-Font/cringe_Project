@@ -63,9 +63,17 @@
   height: 8vh;
   border-radius: 10px;
   font-size: 1.5rem;
+  font-family: "Lemon";
+}
+
+.normal5 {
   color: #4e1b76;
   border: 1px solid #4e1b76;
-  font-family: "Lemon";
+}
+
+.noel5 {
+  color: #005244;
+  border: 1px solid #005244;
 }
 
 .buttonContainer {

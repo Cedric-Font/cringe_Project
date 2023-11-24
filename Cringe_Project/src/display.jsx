@@ -6,7 +6,7 @@ export default function Display({
   categories,
   setCategories,
   nextJoke,
-  setNextJoke, cadeau, nouvelAn
+  setNextJoke, cadeau, nouvelAn, colorButt
 }) {
 
   const [joke, setJoke] = useState([]);
@@ -32,8 +32,8 @@ export default function Display({
       </div>
 
       <section className="buttonContainer">
-        <button onClick={() => setCategories("Home")}>Retour</button>
-        <button onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
+        <button className={colorButt} onClick={() => setCategories("Home")}>Retour</button>
+        <button className={colorButt} onClick={() => setNextJoke(!nextJoke)}>Suivant</button>
       </section>
     </div>
   );

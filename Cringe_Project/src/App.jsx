@@ -12,7 +12,7 @@ function App() {
 
   const [cadeau, setCadeau] = useState("normal2");
   const [nouvelAn, setNouvelAn] = useState("normal3");
-
+  const [colorButt, setColorButt] = useState("normal5")
   const [color, setColor] = useState("normal4"); 
 
   
@@ -22,13 +22,14 @@ function App() {
 
       setCadeau("normal2")
       setNouvelAn("normal3")
-            setColor("normal4")
+      setColor("normal4")
+      setColorButt("normal5")
     } else {
       setNoel("noel")
       setCadeau("noel2")
       setNouvelAn("noel3")
-            setColor("noel4")
-
+      setColor("noel4")
+      setColorButt("noel5")
     }
   }
   
@@ -55,6 +56,7 @@ console.log(cadeau)
       {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} layer={layer} setLayer={setLayer} /> : null}
       {categories === "ENTRE AMIS" ? (
         <Display
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
@@ -65,6 +67,7 @@ console.log(cadeau)
       ) : null}
       {categories === "ENTRE COLLEGUES" ? (
         <Display
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
@@ -75,6 +78,7 @@ console.log(cadeau)
       ) : null}
       {categories === "EN PUBLIC" ? (
         <Display
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
@@ -85,6 +89,7 @@ console.log(cadeau)
       ) : null}
       {categories === "EN PRIVEE" ? (
         <Display
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
@@ -95,6 +100,7 @@ console.log(cadeau)
       ) : null}
       {categories === "EN FAMILLE" ? (
         <Display
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
@@ -105,6 +111,7 @@ console.log(cadeau)
       ) : null}
       {categories === "EN AMOUREUX" ? (
         <Display 
+        colorButt={colorButt}
         nouvelAn={nouvelAn}
         cadeau={cadeau}
           categories={categories}
