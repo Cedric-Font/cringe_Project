@@ -88,6 +88,8 @@ body {
 }
 .contenu .enFamille:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }
 .contenu .entreAmis {
   background-image: url("src/assets/Entre_amis.jpg");
@@ -95,6 +97,8 @@ body {
 }
 .contenu .entreAmis:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }
 .contenu .enAmoureux {
   background-image: url("src/assets/En_amoureux.jpg");
@@ -102,6 +106,8 @@ body {
 }
 .contenu .enAmoureux:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }
 .contenu .entreCollegues {
   background-image: url("src/assets/Entre_collegues.jpg");
@@ -109,6 +115,8 @@ body {
 }
 .contenu .entreCollegues:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }
 .contenu .enPublic {
   background-image: url("src/assets/En_prive.jpg");
@@ -116,6 +124,8 @@ body {
 }
 .contenu .enPublic:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }
 .contenu .enPrive {
   background-image: url("src/assets/En_public.jpg");
@@ -123,4 +133,6 @@ body {
 }
 .contenu .enPrive:hover {
   filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
 }/*# sourceMappingURL=Home.css.map */
