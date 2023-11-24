@@ -122,7 +122,7 @@ body {
   transition: 250ms;
 }
 .contenu .enPublic {
-  background-image: url("src/assets/En_prive.jpg");
+  background-image: url("src/assets/En_public.jpg");
   background-size: cover;
 }
 .contenu .enPublic:hover {
@@ -131,11 +131,13 @@ body {
   transition: 250ms;
 }
 .contenu .enPrive {
-  background-image: url("src/assets/En_public.jpg");
+  background-image: url("src/assets/En_prive.jpg");
   background-size: cover;
 }
 .contenu .enPrive:hover {
   filter: brightness(1.5);
   scale: 1.1;
   transition: 250ms;
-}/*# sourceMappingURL=Home.css.map */
+}
+
+/*# sourceMappingURL=Home.css.map */
