@@ -1,36 +1,111 @@
-import './App.css'
-import { useState} from 'react';
-import { Link } from "react-router-dom";
-import Api from './Api';
-
+import { useState, useEffect } from 'react';
+import "./App.css"
+import Display from "./display";
+import Home from "./Home";
 
 function App() {
+
   
-  const [joke , setJoke] = useState([])
-  const [test, setTest] = useState(true)
-  console.log(test)
+
+  const [on, setOn] = useState(false);
+  const [noel, setNoel] = useState("normal");
+  const [color, setColor] = useState("normal4"); 
+  
+  function beNoelOrNot() {
+    if (on === false){
+      setNoel("normal")
+      setColor("normal4")
+    } else {
+      setNoel("noel")
+      setColor("noel4")
+    }
+  }
+  
+   useEffect(() => {
+  beNoelOrNot()
+
+  console.log(noel)
+  
+   }, [on])  
+  
+  
+
+  const [test, setTest] = useState(true);
+  const [categories, setCategories] = useState("Home");
+  const [nextJoke, setNextJoke] = useState(false);
+  const [layer, setLayer] = useState("layerr")
+
+ 
+ console.log(categories)
 
   return (
     <>
-  <Api joke={joke} setJoke={setJoke} test={test} />
-    <div className='presentation'>
-      <h1>Cringe Me</h1>
-      <p>Comment être malaisant dans toutes les situations</p>
-    </div>
-<div className='contenu'>
-   <Link to ="display" ><button>ENTRE AMIS </button></Link>
-   
-   <button onClick={()=> setTest(!joke)} >EN AMOUREUX</button>
-   <button>ENTRE COLLEGUES </button>
-   <button>EN PUBLIC</button>
-   <button>EN PRIVEE</button>
-   </div>
-   <div>{joke}</div>
+     <div className={`wrapper ${color}`}>
+      {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} layer={layer} setLayer={setLayer} /> : null}
+      {categories === "ENTRE AMIS" ? (
+        <Display
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "ENTRE COLLEGUES" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN PUBLIC" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN PRIVEE" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN FAMILLE" ? (
+        <Display
+        noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+      {categories === "EN AMOUREUX" ? (
+        <Display noel={noel}
+          categories={categories}
+          setCategories={setCategories}
+          nextJoke={nextJoke}
+          setNextJoke={setNextJoke}
+        />
+      ) : null}
+
+
+     <div className={`snow ${layer}1 a`}></div>
+     <div className={`snow ${layer}1`}></div> 
+     <div className={`snow ${layer}2 a`}></div>
+     <div className={`snow ${layer}2`}></div>
+     <div className={`snow ${layer}3 a`}></div>
+     <div className={`snow ${layer}3`}></div>
+</div>
 
     </>
-  )
+  );
 }
 
-export default App
-
-
+export default App;

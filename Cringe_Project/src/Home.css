@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation,
+.contenu {
+  position: fixed;
+  margin-left: 18%;
+}
+
+.normal {
+  background-image: url(./assets/back_presentation.jpg);
+  margin-left: 2%;
+}
+
+.noel {
+  background-image: url(./assets/back_noel_home.jpg);
+  margin-left: 2%;
+}
+
+body {
+  margin: 0px;
+  background-color: #4e1b76;
+  position: relative;
+  font-family: "Lemon";
+}
+
+.presentation {
+  height: 60vh;
+  width: 96vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  border-radius: 15px;
+  top: 1%;
+}
+.presentation p {
+  font-size: larger;
+  padding: 1%;
+}
+.presentation h1 {
+  font-size: 65pt;
+}
+.presentation .contenerButt {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.presentation .contenerButt .noelModeButton {
+  height: 10vh;
+  width: 10vh;
+  background: none;
+  border: none;
+}
+.presentation .contenerButt .noelModeButton img {
+  height: 10vh;
+  width: 10vh;
+}
+
+.contenu {
+  z-index: 1;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+.contenu .jokeButt {
+  border: none;
+  border-radius: 7px;
+  margin: 2%;
+  height: 20vh;
+  width: 30vh;
+  background-position: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+.contenu .enFamille {
+  background-image: url("src/assets/En_famille.jpg");
+  background-size: cover;
+}
+.contenu .enFamille:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}
+.contenu .entreAmis {
+  background-image: url("src/assets/Entre_amis.jpg");
+  background-size: cover;
+}
+.contenu .entreAmis:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}
+.contenu .enAmoureux {
+  background-image: url("src/assets/En_amoureux.jpg");
+  background-size: cover;
+}
+.contenu .enAmoureux:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}
+.contenu .entreCollegues {
+  background-image: url("src/assets/Entre_collegues.jpg");
+  background-size: cover;
+}
+.contenu .entreCollegues:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}
+.contenu .enPublic {
+  background-image: url("src/assets/En_prive.jpg");
+  background-size: cover;
+}
+.contenu .enPublic:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}
+.contenu .enPrive {
+  background-image: url("src/assets/En_public.jpg");
+  background-size: cover;
+}
+.contenu .enPrive:hover {
+  filter: brightness(1.5);
+  scale: 1.1;
+  transition: 250ms;
+}/*# sourceMappingURL=Home.css.map */

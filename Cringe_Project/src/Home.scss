@@ -1,0 +1,151 @@
+$normalImage: url(./assets/back_presentation.jpg);
+$noelImage: url(./assets/back_noel_home.jpg);
+$couleurFond: #4e1b76;
+@font-face {
+  font-family: "Lemon";
+  src: local("Lemon"), url("./fonts/Lemon/Lemon-Regular.ttf") format("truetype");
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation,
+.contenu {
+  position: fixed;
+  margin-left: 18%;
+}
+
+.normal {
+  background-image: $normalImage;
+  margin-left: 2%;
+}
+
+.noel {
+  background-image: $noelImage;
+  margin-left: 2%;
+}
+
+body {
+  margin: 0px;
+  background-color: $couleurFond;
+  position: relative;
+  font-family: "Lemon";
+}
+
+.presentation {
+  height: 60vh;
+  width: 96vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  border-radius: 15px;
+  top: 1%;
+  p {
+    font-size: larger;
+    padding: 1%;
+  }
+  h1 {
+    font-size: 65pt;
+  }
+  .contenerButt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .noelModeButton {
+      height: 10vh;
+      width: 10vh;
+      background: none;
+      border: none;
+      img {
+        height: 10vh;
+        width: 10vh;
+      }
+    }
+  }
+}
+
+.contenu {
+  z-index: 1;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  bottom: 0;
+  .jokeButt {
+    border: none;
+    border-radius: 7px;
+    margin: 2%;
+    height: 20vh;
+    width: 30vh;
+    background-position: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: white;
+  }
+
+  .enFamille {
+    background-image: url("src/assets/En_famille.jpg");
+    background-size: cover;
+  }
+  .enFamille:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+
+  .entreAmis {
+    background-image: url("src/assets/Entre_amis.jpg");
+    background-size: cover;
+  }
+  .entreAmis:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+
+  .enAmoureux {
+    background-image: url("src/assets/En_amoureux.jpg");
+    background-size: cover;
+  }
+  .enAmoureux:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+
+  .entreCollegues {
+    background-image: url("src/assets/Entre_collegues.jpg");
+    background-size: cover;
+  }
+  .entreCollegues:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+
+  .enPublic {
+    background-image: url("src/assets/En_prive.jpg");
+    background-size: cover;
+  }
+  .enPublic:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+
+  .enPrive {
+    background-image: url("src/assets/En_public.jpg");
+    background-size: cover;
+  }
+  .enPrive:hover {
+    filter: brightness(1.5);
+    scale: 1.1;
+    transition: 250ms;
+  }
+}
