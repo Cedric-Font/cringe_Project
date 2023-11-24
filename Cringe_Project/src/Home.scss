@@ -15,14 +15,17 @@ $couleurFond: #4e1b76;
 .presentation,
 .contenu {
   position: fixed;
+  margin-left: 18%;
 }
 
 .normal {
   background-image: $normalImage;
+  margin-left: 2%;
 }
 
 .noel {
   background-image: $noelImage;
+  margin-left: 2%;
 }
 
 body {
