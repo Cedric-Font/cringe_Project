@@ -9,21 +9,32 @@ function App() {
 
   const [on, setOn] = useState(false);
   const [noel, setNoel] = useState("normal");
+
+  const [cadeau, setCadeau] = useState("normal2");
+  const [nouvelAn, setNouvelAn] = useState("normal3");
+
   const [color, setColor] = useState("normal4"); 
+
   
   function beNoelOrNot() {
     if (on === false){
       setNoel("normal")
-      setColor("normal4")
+
+      setCadeau("normal2")
+      setNouvelAn("normal3")
+            setColor("normal4")
     } else {
       setNoel("noel")
-      setColor("noel4")
+      setCadeau("noel2")
+      setNouvelAn("noel3")
+            setColor("noel4")
+
     }
   }
   
    useEffect(() => {
   beNoelOrNot()
-
+console.log(cadeau)
   console.log(noel)
   
    }, [on])  
@@ -44,6 +55,8 @@ function App() {
       {categories === "Home" ? <Home on={on} setOn={setOn} noel={noel} setCategories={setCategories} layer={layer} setLayer={setLayer} /> : null}
       {categories === "ENTRE AMIS" ? (
         <Display
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
@@ -52,7 +65,8 @@ function App() {
       ) : null}
       {categories === "ENTRE COLLEGUES" ? (
         <Display
-        noel={noel}
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
@@ -61,7 +75,8 @@ function App() {
       ) : null}
       {categories === "EN PUBLIC" ? (
         <Display
-        noel={noel}
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
@@ -70,7 +85,8 @@ function App() {
       ) : null}
       {categories === "EN PRIVEE" ? (
         <Display
-        noel={noel}
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
@@ -79,7 +95,8 @@ function App() {
       ) : null}
       {categories === "EN FAMILLE" ? (
         <Display
-        noel={noel}
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
@@ -87,7 +104,9 @@ function App() {
         />
       ) : null}
       {categories === "EN AMOUREUX" ? (
-        <Display noel={noel}
+        <Display 
+        nouvelAn={nouvelAn}
+        cadeau={cadeau}
           categories={categories}
           setCategories={setCategories}
           nextJoke={nextJoke}
